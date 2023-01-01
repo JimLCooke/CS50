@@ -1,0 +1,7 @@
+    Ask the user how tall they want the pyramid to be; user input.
+    Keep asking until they give a number between 1 and 8.
+    Make a loop to build one row of the pyramid at a time.
+    Inside the loop, make another loop to print the spaces at the start of each row.
+    Inside the loop, make another loop to print the hashes for each row.
+    After each row, go to the next line.
+    When the loop is done, stop.

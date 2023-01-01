@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quote
+{% endblock %}
+
+{% block main %}
+
+<h1>Quote</h1>
+
+<form method="post" action="/quote">
+  <label for="symbol">Symbol</label>
+  <input type="text" id="symbol" name="symbol">
+
+  <button type="submit">Get Quote</button>
+</form>
+
+{% if quote %}
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Symbol</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>{{ quote.name }}</td>
+    <td>{{ quote.symbol }}</td>
+    <td>{{ quote.price | usd }}</td>
+  </tr>
+</table>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,65 @@
+/* use body tag to style the background color and font */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Courier New", monospace;
+  }
+
+  /* use h1 to style main headings */
+  h1 {
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0.5em 0;
+  }
+
+  /* use h2 to style subheadings */
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0.5em 0;
+  }
+
+  /* use p to style paragraphs */
+  p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 1em 0;
+  }
+
+  /* use a to style links */
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* use .btn to style buttons */
+  .btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+
+  /* use footer to style the footer */
+  footer {
+    font-size: 1.5em;
+  }
+
+  /* use .p-2 to style social media icons */
+  .p-2 {
+    font-size: 2em;
+  }
+
+  /* use .fa-lg to make icons larger */
+  .fa-lg {
+    font-size: 1.5em;
+  }

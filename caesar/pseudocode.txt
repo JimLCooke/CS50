@@ -1,0 +1,17 @@
+This pseudocode outlines the steps for checking the command-line arguments, prompting the user for a plaintext message, and encrypting the message using the Caesar cipher. It also handles errors that may occur if the user does not provide a valid key.
+
+Check if the user provided a single command-line argument (key)
+    If not, print an error message and exit
+
+Convert the key to an integer
+    If the key is not a valid number, print an error message and exit
+
+Prompt the user for a plaintext message
+
+Encrypt the message using the Caesar cipher
+    For each character in the plaintext message
+        If the character is a letter
+            Shift the letter by the key value
+        Print the character
+
+Print a newline character and exit

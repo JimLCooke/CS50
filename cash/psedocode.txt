@@ -1,0 +1,10 @@
+    Define a function get_cents() that asks the user to input the number of cents they are owed and returns that value. Validate the input to ensure it is a positive integer.
+    Define a function calculate_coins(int cents, int coin_value) that calculates the minimum number of coins needed to represent the given number of cents using the given coin value (25 for quarters, 10 for dimes, etc.). Return the number of coins.
+    In the main() function:
+        Call get_cents() to get the number of cents the user is owed.
+        Initialize a variable coins to 0.
+        Call calculate_coins with the number of cents the user is owed and the value of a quarter as arguments. Add the number of quarters returned by the function to coins.
+        Call calculate_coins with the remaining number of cents and the value of a dime as arguments. Add the number of dimes returned by the function to coins.
+        Call calculate_coins with the remaining number of cents and the value of a nickel as arguments. Add the number of nickels returned by the function to coins.
+        Call calculate_coins with the remaining number of cents and the value of a penny as arguments. Add the number of pennies returned by the function to coins.
+        Print the total number of coins needed to the console.

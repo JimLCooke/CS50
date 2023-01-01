@@ -1,0 +1,23 @@
+Create a constant array called POINTS that stores the point values for each letter of the alphabet
+
+Define a function called compute_score that takes a string as input and returns an integer
+    Initialize a variable called score to 0
+    For each character in the string
+        If the character is a letter
+            Convert the character to lowercase
+            Add the point value of the character to the score
+        Otherwise, do nothing
+    Return the score
+
+Define the main function
+    Prompt the first player for their word and store it in a variable called word1
+    Prompt the second player for their word and store it in a variable called word2
+    Call the compute_score function with word1 as the argument and store the result in a variable called score1
+    Call the compute_score function with word2 as the argument and store the result in a variable called score2
+    If score1 is greater than score2
+        Print "Player 1 wins!"
+    Else if score2 is greater than score1
+        Print "Player 2 wins!"
+    Otherwise
+        Print "Tie!"
+    End

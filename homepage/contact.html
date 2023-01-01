@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- include Bootstrap CSS file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- include custom CSS file -->
+  <link href="styles.css" rel="stylesheet">
+  <title>Contact</title>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My Website</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- main content -->
+<div class="container mt-5">
+    <h1>Contact</h1>
+    <p>Get in touch with us by filling out the form below or contacting us through one of the methods listed on this page.</p>
+
+    <!-- contact form -->
+    <form action="/contact-form-handler.php" method="post">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" class="form-control" id="subject" name="subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+    <hr class="my-5">
+
+ <!-- contact info -->
+<h2>Contact Information</h2>
+<div class="row">
+  <div class="col-md-4">
+    <i class="fas fa-map-marker-alt fa-2x"></i>
+    <p>123 Main Street<br>City, State 12345</p>
+  </div>
+  <div class="col-md-4">
+    <i class="fas fa-phone fa-2x"></i>
+    <p>(123) 456-7890</p>
+  </div>
+  <div class="col-md-4">
+    <i class="fas fa-envelope fa-2x"></i>
+    <p>info@mywebsite.com</p>
+  </div>
+</div>
+
+<!-- use Google Maps to embed a map -->
+<hr class="my-5">
+<h2>Where We Are</h2>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1403.9967795628155!2d-96.8385576!3d32.9342936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa07169cc8c27e2dd!2sGoogle+Campus!5e0!3m2!1sen!2sus!4v1560128582501!5m2!1sen!2sus" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<!-- footer -->
+<footer class="bg-light py-3 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Copyright &copy; My Website 2022</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline text-md-right">
+            <li class="list-inline-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="services.html">Services</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- include Bootstrap JavaScript file -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+  </html>

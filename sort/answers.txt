@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: Bubble sort is a simple sorting algorithm that works by repeatedly swapping adjacent elements that are in the wrong order. It has a time complexity of O(n^2) in the worst case, which means that it will also take a long time to sort large lists. However, it tends to be faster than selection sort for small lists because it can make multiple passes over the list without having to make any swaps, which means that it can terminate early if the list is already sorted. This is consistent with the results
+
+sort2 uses: merge sort
+
+How do you know?: Works fast on large unsorted data. It has a time complexity of O(n log n) in the worst case, which means that it is much faster than both selection sort and bubble sort for large lists. This is consistent with observation.
+
+sort3 uses: selection sort
+
+How do you know?: Selection sort is a simple sorting algorithm that works by repeatedly selecting the smallest element from the unsorted list and placing it at the front of the sorted list. This is with observation.

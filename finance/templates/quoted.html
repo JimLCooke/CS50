@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+
+<h1>Quoted</h1>
+
+{% if error %}
+  <p>{{ error }}</p>
+{% else %}
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Symbol</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>{{ quote.name }}</td>
+      <td>{{ quote.symbol }}</td>
+      <td>{{ quote.price | usd }}</td>
+    </tr>
+  </table>
+  <form method="post" action="/buy">
+    <input type="hidden" name="symbol" value="{{ quote.symbol }}">
+    <label for="shares">Shares</label>
+    <input type="text" id="shares" name="shares">
+    <button type="submit">Buy</button>
+  </form>
+{% endif %}
+
+{% endblock %}
